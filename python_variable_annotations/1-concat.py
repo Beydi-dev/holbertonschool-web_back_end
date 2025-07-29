@@ -1,2 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ Annotation concat """
+
+
+def concat(str1: str, str2: str) -> str:
+    return str1 + str2
