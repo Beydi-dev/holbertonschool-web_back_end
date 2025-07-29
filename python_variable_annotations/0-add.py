@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Annotation add """
+""" Annotation of the add function """
 
 
 def add(a: float, b: float) -> float:
