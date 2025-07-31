@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+""" Coroutine at the same time witha sync """
 import time
 import asyncio
-""" Coroutine at the same time witha sync """
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
