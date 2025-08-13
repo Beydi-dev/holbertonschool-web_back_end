@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 import csv
 import math
-from typing import List
+from typing import List, Tuple
 """
 Simple helper function for pagination
 """
 
-def index_range(page: int, page_size: int) -> tuple:
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
     Calculate the start and end indexes for pagination.
 
