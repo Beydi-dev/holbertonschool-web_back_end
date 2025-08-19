@@ -3,8 +3,7 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
-    const task = true;   // nouvelles variables, seulement dans ce bloc
-    const task2 = false;
+    // rien à faire ici
   }
 
   return [task, task2];
