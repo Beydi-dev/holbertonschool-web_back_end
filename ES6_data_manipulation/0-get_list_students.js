@@ -1,7 +1,7 @@
-function getListStudents() {
-	return [
-		{firstName: "Guillaume", id: 1, city: "San Francisco"},
-		{firstName: "James", id: 2, city: "Columbia"},
-		{firstName: "Serena", id: 5, city: "San Francisco"}
-	];
+export default function getListStudents() {
+  return [
+    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+    { id: 2, firstName: 'James', location: 'Columbia' },
+    { id: 5, firstName: 'Serena', location: 'San Francisco' },
+  ];
 }
