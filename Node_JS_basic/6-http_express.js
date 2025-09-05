@@ -1,11 +1,20 @@
 const express = require('express');
 
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello Holberton School!');
-});
+const port = 1245;
+
+const setupRoutes = () => {
+  app.get('/', (req, res) => {
+    res.send('Hello Holberton School!');
+  });
+};
+
+setupRoutes();
 
 if (require.main === module) {
-  app.listen(1245);
+  app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+  });
 }
+
 module.exports = app;
