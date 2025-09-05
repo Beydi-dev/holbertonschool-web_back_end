@@ -9,13 +9,13 @@ const requestListener = (req, res) => {
   if (req.url === '/') {
     res.end('Hello Holberton School!');
   } else if (req.url === '/students') {
-    res.write('This is the list of our students\n');
+    const output = 'This is the list of our students\n';
     countStudents(database)
-      .then((output) => {
-        res.end(output);
+      .then((list) => {
+        res.end(output + list);
       })
       .catch(() => {
-        res.end('Cannot load the database');
+        res.end(`${output}Cannot load the database`);
       });
   } else {
     res.end('Not Found');
